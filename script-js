@@ -1,0 +1,50 @@
+// Get balance element and set initial balance
+var balanceEl = document.getElementById("balance").querySelector("p");
+var balance = 500;
+balanceEl.textContent = "$" + balance.toFixed(2);
+
+// Get transactions element and set initial transactions
+var transactionsEl = document
+	.getElementById("transactions")
+	.querySelector("ul");
+var transactions = [
+	{ date: "Feb 11, 2023", description: "Grocery shopping", amount: -50.0 },
+	{
+		date: "Feb 10, 2023",
+		description: "Electricity bill payment",
+		amount: -30.0,
+	},
+];
+
+// Add transactions to transactions element
+for (var i = 0; i < transactions.length; i++) {
+	var transaction = transactions[i];
+	var li = document.createElement("li");
+	li.innerHTML =
+		'<span class="date">' +
+		transaction.date +
+		"</span>" +
+		'<span class="description">' +
+		transaction.description +
+		"</span>" +
+		'<span class="amount">' +
+		transaction.amount.toFixed(2) +
+		"</span>";
+	transactionsEl.appendChild(li);
+}
+
+// Get budget element and set initial budget
+var budgetEl = document.getElementById("budget");
+var income = 1000;
+var expenses = 550;
+var remaining = income - expenses;
+budgetEl.innerHTML =
+	"<p>Total income: $" +
+	income.toFixed(2) +
+	"</p>" +
+	"<p>Total expenses: $" +
+	expenses.toFixed(2) +
+	"</p>" +
+	"<p>Remaining budget: $" +
+	remaining.toFixed(2) +
+	"</p>";
