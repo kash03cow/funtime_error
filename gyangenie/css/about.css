@@ -2,7 +2,7 @@
     margin-top: 3rem ;
 }
 
-.bout__achievements-container{
+.about__achievements-container{
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 5rem;
@@ -37,6 +37,17 @@
     display: inline-block;
     margin-bottom: 2rem;
     font-size: 2rem;
+}
+
+.para{
+    padding: 40px;
+    margin-top: 60px;
+    background: rgb(103, 102, 102);
+    border: 20px;
+}
+
+.para1{
+    margin: 0;
 }
 
 .achievement__card:nth-child(2) .achievement__icon{
