@@ -18,6 +18,10 @@
     gap: 1.5rem;
 }
 
+#meet{
+    margin-top: 20px;
+}
+
 .achievement__card{
     background: var(--color-bg1);
     padding: 1.6rem;
